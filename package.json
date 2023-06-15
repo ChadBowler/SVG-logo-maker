@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "inquirer": "^8.2.4"
   },
   "devDependencies": {
-    "jest": "^29.5.0"
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22"
   }
 }

@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateSVG = require('./utils/generateSVG');
+const createSVG = require('./lib/shapes');
 const fileName = 'logo.svg';
 
 //array of questions for inquirer
@@ -26,8 +26,13 @@ const questions = [
     },
 ];
 
+//Node File System to write new README.md file
+function writeToFile(fileName, data) {
 
-
+    fs.writeFile(fileName, data, err => {
+        err ? console.error(err) : console.log('logo.svg file created!');
+    });
+};
 
 //initialization
 function init() {
@@ -43,4 +48,4 @@ function init() {
         });
 };
 //call init function
-//init();
+init();
