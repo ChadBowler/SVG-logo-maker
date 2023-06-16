@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+//validateColor to make sure user's input is valid
 const validateColor = require('validate-color').default;
 const createSVG = require('./lib/shapes');
 const fileName = 'logo.svg';
@@ -49,18 +50,14 @@ const questions = [
         }
     },
 ];
-
 //Node File System to write new README.md file
 function writeToFile(fileName, data) {
-
     fs.writeFile(fileName, data, err => {
         err ? console.error(err) : console.log('logo.svg file created!');
     });
 };
-
 //initialization
 function init() {
-    
     inquirer
         .prompt(questions)
         .then((answers) => {
