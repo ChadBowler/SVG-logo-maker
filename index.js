@@ -23,7 +23,7 @@ const questions = [
         type: 'input',
         message: "What color do you want your text to be?",
         name: 'textColor',
-        default: 'black',
+        default: 'white',
         validate: function (answer) {
             if (!validateColor(answer)) {
                 return console.log("Please enter a valid color name or hexidecimal color.");
