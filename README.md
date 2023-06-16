@@ -30,7 +30,8 @@ A command-line application that takes in user input and outputs an SVG based on 
 
 ![example_logo_1](https://github.com/ChadBowler/SVG-logo-maker/assets/127648744/22339b89-0f18-4417-b39e-f7dacc0add31)
 
-## [Video Link](https://drive.google.com/file/d/19XSHcspYXorAscXqE0aQZuTAdQgNT0ol/view?usp=drive_link)
+## Video
+* [Video Link](https://drive.google.com/file/d/19XSHcspYXorAscXqE0aQZuTAdQgNT0ol/view?usp=drive_link)
 
 ## License
 
