@@ -2,7 +2,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 //validateColor to make sure user's input is valid
 const validateColor = require('validate-color').default;
-const createSVG = require('./lib/shapes');
+const shapes = require('./lib/shapes');
+const createSVG = shapes.createSVG;
 const fileName = 'logo.svg';
 
 //array of questions for inquirer
